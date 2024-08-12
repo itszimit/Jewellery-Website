@@ -1,0 +1,911 @@
+ /* #fdf7e4  ,  #faeed1  ,  #ded086  ,  #bbab8c */
+
+ .mbody {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background: url("img/bg.jpg") no-repeat;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .box {
+     width: 420px;
+     background: transparent;
+     color: #fff;
+     border-radius: 12px;
+     padding: 30px 40px;
+     border: 2px solid rgba(215, 215, 215, .2);
+     backdrop-filter: blur(10px);
+ }
+
+ .box h1 {
+     font-size: 36px;
+     text-align: center;
+ }
+
+ .box .input-box {
+     width: 100%;
+     height: 50px;
+     background: transparent;
+     margin: 30px 0;
+ }
+
+ .input-box input {
+     width: 100%;
+     height: 100%;
+     background: transparent;
+     border: none;
+     outline: none;
+     border: 2px solid rgba(215, 215, 215, .2);
+     border-radius: 40px;
+     font-size: 16px;
+     color: #fff;
+     padding: 20px 45px 20px 20px;
+ }
+
+ .input-box input::placeholder {
+     color: #fff;
+ }
+
+ .input-box input:hover {
+     /* width: 350px; */
+     scale: 1.1;
+     transition: 0.2s;
+ }
+
+ .box .remember-forgot {
+     display: flex;
+     justify-content: space-between;
+     font-size: 14.5px;
+     margin: -15px 0 15px;
+ }
+
+ .remember-forgot label input {
+     accent-color: #fff;
+     margin-right: 3px;
+ }
+
+ .remember-forgot a {
+     color: #fff;
+     text-decoration: none;
+
+ }
+
+ .remember-forgot a:hover {
+     color: #fff;
+     text-decoration: underline;
+ }
+
+ .box .btnsub {
+     width: 100%;
+     height: 45px;
+     background: #fff;
+     border: none;
+     outline: none;
+     border-radius: 40px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+     cursor: pointer;
+     font-size: 16px;
+     color: #333;
+     font-weight: 600;
+ }
+
+ .box .btnsub:hover {
+
+     background-color: transparent;
+     border: 2px solid rgba(215, 215, 215, .2);
+     border-radius: 40px;
+     color: #fff;
+     box-shadow: 5px 5px 5px #dddd;
+     text-decoration: none;
+
+ }
+
+ .box .btnsub:hover a {
+     color: #fff;
+ }
+
+ .box .register-link {
+     font-size: 14.5px;
+     text-align: center;
+     margin: 20px 0 15px;
+ }
+
+ .register-link p {
+     color: #fff;
+ }
+
+ .register-link p a {
+     color: #fff;
+     text-decoration: none;
+     font-weight: 600;
+ }
+
+ .register-link p a:hover {
+     text-decoration: underline;
+ }
+
+
+
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ .navbar {
+     display: flex;
+     align-items: center;
+     padding: 20px;
+     animation: navan 1s;
+     position: relative;
+     background: #ded086;
+     width: 100%;
+     position: -webkit-sticky;
+     position: sticky;
+     top: 0;
+     z-index: 2;
+ }
+
+
+
+ nav {
+     flex: 1;
+     text-align: right;
+
+ }
+
+ @keyframes navan {
+     0% {
+         bottom: 100px;
+     }
+
+     100% {
+         bottom: 0px;
+
+     }
+ }
+
+ nav ul {
+
+     display: flex;
+     list-style-type: none;
+     align-items: center;
+     justify-content: flex-end;
+
+ }
+
+ nav ul li {
+
+     display: inline-block;
+     margin-right: 40px;
+     font-size: 22px;
+     font-weight: bold;
+
+ }
+
+ nav ul li a {
+     color: #000000;
+ }
+
+ .nav-logo img {
+     margin-left: 30px;
+ }
+
+ .nav-logo img:hover {
+     scale: 1.2;
+     transition: 0.1s;
+ }
+
+ .nav-img:hover {
+     scale: 1.2;
+     transition: 0.1s;
+ }
+
+ nav ul li a:hover {
+     color: #fff;
+     transition: 0.1s;
+ }
+
+ .row {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     overflow: hidden;
+ }
+
+ .col-1 {
+     flex-basis: 50%;
+     min-width: 300px;
+
+ }
+
+ @keyframes hometext {
+     0% {
+         right: 100%;
+     }
+
+     100% {
+         right: 0%;
+     }
+ }
+
+ .col-1 h1 {
+     font-size: 50px;
+     font-family: 'Cambria';
+     margin-left: 150px;
+     animation: hometext 1s;
+     position: relative;
+ }
+
+ .col-2 {
+     padding: 15px;
+ }
+
+ .col-2 img {
+     max-width: 100%;
+     margin-top: 50px;
+     margin-left: 200px;
+     animation: homebg 1.5s;
+     position: relative;
+     box-shadow: 10px 10px 10px #363535dd;
+     border-radius: 20px;
+ }
+
+
+ @keyframes homebg {
+     0% {
+         left: 100%;
+     }
+
+     100% {
+         left: 0%;
+     }
+ }
+
+ .col-1 p {
+     margin-left: 150px;
+     animation: hometext 1.5s;
+     position: relative;
+ }
+
+ .col-1 .btnsub {
+     width: 30%;
+     height: 45px;
+     background: rgb(222, 208, 134);
+     border: none;
+     outline: none;
+     border-radius: 40px;
+     cursor: pointer;
+     font-size: 22px;
+     color: #333;
+     margin-top: 50px;
+     margin-left: 150px;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     animation: hometext 2s;
+     position: relative;
+     font-weight: bold;
+
+ }
+
+ .col-1 .btnsub:hover {
+
+     background-color: #333;
+     border: 2px solid rgba(215, 215, 215, .2);
+     border-radius: 20px;
+     color: #fff;
+     box-shadow: 10px 10px 10px #363535dd;
+     text-decoration: none;
+     height: 70px;
+     transition: 0.5s;
+ }
+
+
+
+ a {
+     text-decoration: none;
+
+ }
+
+ p {
+     color: #000000;
+ }
+
+ .footer .logo {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     flex-direction: column;
+ }
+
+ .footer {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding: 40px 100px;
+     align-items: center;
+     background-color: #decf86;
+     margin-top: 50px;
+ }
+
+ .footer .social img {
+     margin-left: 30px;
+ }
+
+ .footer .social img:hover {
+     scale: 1.1;
+     transition: 0.1s;
+ }
+
+ .footer .elink .eslink {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+
+ }
+
+ .footer .elink {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 10px;
+     text-align: center;
+
+ }
+
+ .subcat {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     padding: 40px 100px;
+     align-items: center;
+     margin-top: 20px;
+
+ }
+
+ .subitem {
+
+     width: 400px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+     padding: 10px;
+     border-radius: 20px;
+     box-shadow: 6px 6px 10px;
+     height: 450px;
+
+ }
+
+ .subitem img {
+     width: fit-content;
+     height: 250px;
+ }
+
+ .subcat h3 {
+     text-align: center;
+ }
+
+ .subcat hr {
+     width: 100%;
+     margin-top: 10px;
+ }
+
+ .subitem .btnsub {
+     width: 100%;
+     padding: 10px 20px;
+     background: #ded086;
+     border: none;
+     outline: none;
+     border-radius: 40px;
+     cursor: pointer;
+     font-size: 15px;
+     color: #333;
+     font-weight: bold;
+     margin-top: 10px;
+ }
+
+ .subitem .btnsub:hover {
+     background-color: #333;
+     border: 2px solid rgba(215, 215, 215, .2);
+     border-radius: 20px;
+     color: #fff;
+     box-shadow: 5px 5px 5px #363535dd;
+     text-decoration: none;
+     height: 55px;
+     transition: 0.5s;
+ }
+
+ .subitem:hover {
+     scale: 1.1;
+ }
+
+ .category>h1 {
+     display: flex;
+     flex-direction: column;
+     margin-top: 85px;
+     text-align: center;
+     align-items: center;
+ }
+
+ .category>h1 hr {
+     margin-top: 20px;
+ }
+
+ .footerrights {
+     display: flex;
+     background-color: #000000;
+     text-align: center;
+     height: 50px;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .gen {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     padding: 40px 100px;
+     align-items: center;
+     margin-top: 50px;
+
+ }
+
+ .subgen {
+
+     width: 600px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+     padding: 10px;
+     border-radius: 20px;
+     box-shadow: 6px 6px 10px;
+     height: 600px;
+
+ }
+
+ .subgen:hover {
+     scale: 1.05;
+ }
+
+ .gen h3 {
+     text-align: center;
+ }
+
+ .gen hr {
+     width: 100%;
+     margin-top: 10px;
+ }
+
+ .subgen .btnsub {
+     width: 100%;
+     padding: 10px 20px;
+     background: #ded086;
+     border: none;
+     outline: none;
+     border-radius: 40px;
+     cursor: pointer;
+     font-size: 15px;
+     color: #333;
+     font-weight: bold;
+     margin-top: 10px;
+ }
+
+ .genders>h1 {
+     display: flex;
+     flex-direction: column;
+     margin-top: 85px;
+     text-align: center;
+     align-items: center;
+ }
+
+ .genders>h1 hr {
+     margin-top: 20px;
+ }
+
+ .subgen .btnsub:hover {
+     background-color: #333;
+     border: 2px solid rgba(215, 215, 215, .2);
+     border-radius: 20px;
+     color: #fff;
+     box-shadow: 5px 5px 5px #363535dd;
+     text-decoration: none;
+     height: 55px;
+     transition: 0.5s;
+ }
+
+ .cart {
+     width: 80%;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     padding: 40px 100px;
+     align-items: center;
+     margin-top: 20px;
+     margin-left: 200px;
+     border-bottom: #000000;
+
+ }
+
+ .cart .cartimg img {
+     height: 220px;
+     width: 350px;
+ }
+
+ .cartinfo {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     padding: 10px 20px;
+     gap: 20px;
+ }
+
+ .cartinfo h3 {
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .cartinfo hr {
+     width: 130px;
+     align-items: center;
+     margin-top: 10px;
+ }
+
+ .cartinfo p {
+     font-size: 22px;
+     text-align: center;
+ }
+
+ .cartinfo .qty {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     gap: 10px;
+     align-items: center;
+     font-size: 22px;
+ }
+
+ .cartinfo .qty button {
+
+     padding: 5px 10px;
+     background: rgb(222, 208, 134);
+     border: none;
+     outline: none;
+     border-radius: 5px;
+     cursor: pointer;
+     font-size: 22px;
+     color: #333;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-weight: bold;
+ }
+
+ .cartinfo .qty button:hover {
+
+     background-color: #333;
+     border: 2px solid rgba(215, 215, 215, .2);
+     color: #fff;
+     box-shadow: 3px 3px 3px #363535dd;
+     text-decoration: none;
+     transition: 0.1s;
+ }
+
+ .cartinfo .btncart{
+    display: flex;
+     flex-direction: row;
+     justify-content: center;
+     gap: 20px;
+     align-items: center;
+     font-size: 22px;
+     
+ }
+
+ .cartinfo .btncart button {
+
+    padding: 5px 10px;
+    background: rgb(222, 208, 134);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 22px;
+    color: #333;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    width: 130px;
+    height: 40px;
+} 
+
+.cartinfo .btncart button:hover {
+
+    background-color: #333;
+    border: 2px solid rgba(215, 215, 215, .2);
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 5px 5px 5px #363535dd;
+    text-decoration: none;
+    height: 50px;
+    transition: 0.5s;
+    
+}
+
+.line hr{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content:center;
+    align-items: center;
+    margin-left:290px;
+    color: #cecaca;
+}
+
+.product {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px 100px;
+    align-items: center;
+    margin-top: 20px;
+    border-bottom: #000000;
+}
+
+.productimg{
+    height: 670px;
+    width: 40%;
+
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.product .productimg img {
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.productinfo {
+    display: flex;
+    height: 100%;
+    width: 60%;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 20px;
+    gap: 20px;
+}
+
+.productinfo h3 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productinfo hr {
+    width: 130px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.productinfo p {
+    font-size: 22px;
+    text-align: left;
+}
+
+.productinfo .qty {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 10px;
+    align-items: center;
+    font-size: 22px;
+}
+
+.productinfo .qty button {
+
+    padding: 5px 10px;
+    background: rgb(222, 208, 134);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 22px;
+    color: #333;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+
+}
+
+.productinfo .qty button:hover {
+
+    background-color: #333;
+    border: 2px solid rgba(215, 215, 215, .2);
+    color: #fff;
+    box-shadow: 3px 3px 3px #363535dd;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.productinfo .btncart{
+    display: flex;
+     flex-direction: row;
+     justify-content: center;
+     gap: 20px;
+     align-items: center;
+     font-size: 22px;
+     
+ }
+
+ .productinfo .btncart button {
+
+    padding: 5px 10px;
+    background: rgb(222, 208, 134);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 22px;
+    color: #333;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    width: auto;
+    height: 40px;
+} 
+
+.productinfo .btncart button:hover {
+
+    background-color: #333;
+    border: 2px solid rgba(215, 215, 215, .2);
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 5px 5px 5px #363535dd;
+    text-decoration: none;
+    height: 50px;
+    transition: 0.3s;
+}
+
+.subpro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 40px 100px;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.subproitem {
+
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 10px;
+    height: 450px;
+
+}
+
+.subproitem img {
+    width: fit-content;
+    height: 250px;
+}
+
+.subpro h3 {
+    text-align: center;
+}
+
+.subpro hr {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.subproitem .btnsub {
+    width: 100%;
+    padding: 10px 20px;
+    background: #ded086;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.subproitem .btnsub:hover {
+    background-color: #333;
+    border: 2px solid rgba(215, 215, 215, .2);
+    border-radius: 20px;
+    color: #fff;
+    box-shadow: 5px 5px 5px #363535dd;
+    text-decoration: none;
+    height: 55px;
+    transition: 0.5s;
+}
+
+.subproitem:hover {
+    scale: 1.1;
+}
+
+.similarpro>h1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 85px;
+    text-align: center;
+    align-items: center;
+}
+
+.similarpro>h1 hr {
+    margin-top: 20px;
+}
+
+.review{
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center ;
+    margin-top: 50px;
+}
+
+.reviews {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px 100px;
+    align-items: center;
+    margin-top: 20px;
+    border-bottom: #000000;
+}
+
+.reviews .reviewimg img {
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.reviewinfo {
+    display: flex;
+    height: 100%;
+    width: 60%;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 20px;
+    gap: 20px;
+}
+
+.reviewinfo h1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviewinfo hr {
+    width: 100px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.reviewinfo p {
+    font-size: 22px;
+    text-align: left;
+}
